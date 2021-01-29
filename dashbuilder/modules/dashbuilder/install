@@ -3,8 +3,6 @@ set -e
 
 SOURCES_DIR=/tmp/artifacts
 
-unzip -q ${SOURCES_DIR}/${ADD_ONS_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
-
 DISTRIBUTION_WAR_DIR=dashbuilder-runtime.war
 
 unzip -q ${SOURCES_DIR}/${DASHBUILDER_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}

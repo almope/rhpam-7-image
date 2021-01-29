@@ -16,16 +16,14 @@ envs:
   value: "7.11.0"
 - name: "PRODUCT_VERSION"
   value: "7.11.0"
-- name: "ADD_ONS_DISTRIBUTION_ZIP"
-  value: "rhpam_add_ons_distribution.zip"
 - name: "DASHBUILDER_DISTRIBUTION_ZIP"
-  value: "rhpam-7.11.0-dashbuilder-runtime.zip"
+  value: "rhpam_dashbuilder_runtime.zip"
 ports:
 - value: 8080
 artifacts:
-- name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.11.0.redhat-20210113-add-ons.zip
-  md5: "ed964aa2a12fbb547bd080ce4adf3b78"
+- name: "rhpam_dashbuilder_runtime.zip"
+  # rhpam-7.11.0-dashbuilder-runtime.zip
+  md5: ""
 run:
   user: 185
   cmd:

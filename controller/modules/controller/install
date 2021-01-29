@@ -4,12 +4,9 @@ set -e
 
 SOURCES_DIR=/tmp/artifacts
 
-unzip -q ${SOURCES_DIR}/${ADD_ONS_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
-
-DISTRIBUTION_ZIP=${CONTROLLER_DISTRIBUTION_ZIP}
 DISTRIBUTION_WAR_DIR=controller.war
 
-unzip -q ${SOURCES_DIR}/${DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
+unzip -q ${SOURCES_DIR}/${CONTROLLER_DISTRIBUTION_ZIP} -d ${SOURCES_DIR}
 
 cp -rf ${SOURCES_DIR}/${DISTRIBUTION_WAR_DIR} ${JBOSS_HOME}/standalone/deployments/ROOT.war
 touch ${JBOSS_HOME}/standalone/deployments/ROOT.war.dodeploy

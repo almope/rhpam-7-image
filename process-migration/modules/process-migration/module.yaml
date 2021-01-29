@@ -16,10 +16,8 @@ envs:
   value: "7.11.0"
 - name: "PRODUCT_VERSION"
   value: "7.11.0"
-- name: "ADD_ONS_DISTRIBUTION_ZIP"
-  value: "rhpam_add_ons_distribution.zip"
 - name: "KIE_PROCESS_MIGRATION_DISTRIBUTION_JAR"
-  value: "rhpam-7.11.0-process-migration-service-standalone.jar"
+  value: "rhpam_process_migration_service_standalone.jar"
 - name: "LAUNCH_DIR"
   value: "/opt/rhpam-process-migration/launch"
 - name: "CONFIG_DIR"
@@ -29,9 +27,9 @@ envs:
 ports:
 - value: 8080
 artifacts:
-- name: "rhpam_add_ons_distribution.zip"
-  # rhpam-7.11.0.redhat-20210113-add-ons.zip
-  md5: "ed964aa2a12fbb547bd080ce4adf3b78"
+- name: "rhpam_process_migration_service_standalone.jar"
+  # rhpam-7.49.0-process-migration-service-standalone.jar
+  md5: ""
 run:
   user: 185
   cmd:
