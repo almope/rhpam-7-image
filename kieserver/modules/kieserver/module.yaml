@@ -37,7 +37,7 @@ artifacts:
   # slf4j-simple-1.7.22.redhat-2.jar
   md5: "62cc6eeb72e2738e3acc8957ca95f37b"
 - name: "kie-server-services-jbpm-cluster-7.52.0.Final-redhat-00007.jar"
-  dest: "/opt/kie/dependencies/jbpm-clustering"
+  # dest: "/opt/kie/dependencies/jbpm-clustering"
   md5: "139aeae58d08eda539a1c72778967b3a"
 run:
   user: 185
